@@ -12,7 +12,7 @@ import com.example.ff.Interface.RvChat
 
 
 class ListChatAdapter(var listChat: MutableList<OutDataChat>, val rvInterfaceChat: RvChat): RecyclerView.Adapter<ListChatAdapter.listchat>() {
-inner class listchat(itemView: View) :RecyclerView.ViewHolder(itemView)
+    inner class listchat(itemView: View) :RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): listchat {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.layout_listchat,parent,false)
